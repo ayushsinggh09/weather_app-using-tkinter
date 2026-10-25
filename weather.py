@@ -3,19 +3,17 @@ from tkinter import Frame
 import requests
 from PIL import Image, ImageTk
 from io import BytesIO
-#api keys :2b7132983f7a12072e5f41122b32a695
-#api url :https://api.openweathermap.org/data/2.5/weather
-#icon :http://openweathermap.org/img/wn/{icon_code}@2x.png
+
 class WeatherApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Weather App")
         self.root.geometry("600x500")
 
-        self.weather_key = '2b7132983f7a12072e5f41122b32a695'
-        self.api_url = 'https://api.openweathermap.org/data/2.5/weather'
+        self.weather_key = '**********'
+        self.api_url = '**************'
 
-        self.image_path = r"C:\Users\ayush\OneDrive\Desktop\Python project\venv\Scripts\1738262629657.jpg"
+        self.image_path = ************
         self.pil_image = Image.open(self.image_path)
         self.pil_image = self.pil_image.resize((600, 500), Image.Resampling.LANCZOS)
         self.img_photo = ImageTk.PhotoImage(self.pil_image)
